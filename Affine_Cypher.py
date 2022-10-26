@@ -41,7 +41,6 @@ def Decode ():
         except :
             return
         try :
-            x=""
             x=Inv_a(a)
             message=unidecode.unidecode(message.replace(" ", ""))
             message=re.sub('[^a-zA-Z]+', '', message)
