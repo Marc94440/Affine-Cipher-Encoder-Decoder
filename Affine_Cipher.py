@@ -84,9 +84,10 @@ def Inv_a (a):
 dlg.Encryption_pushButton.clicked.connect(Encode)
 dlg.Decryption_pushButton.clicked.connect(Decode)
 
-#open the application
-dlg.show()
-app.exec()
+if __name__=="__main__":
+    #open the application
+    dlg.show()
+    app.exec()
 
 #All the GUI Widgets
 """
