@@ -3,6 +3,11 @@ from PyQt5 import QtWidgets, uic
 import unidecode
 import re
 
+#For running .exe file
+import sys, os
+if getattr(sys, 'frozen', False):
+    os.chdir(sys._MEIPASS)
+
 #initialising default variable
 app =QtWidgets.QApplication([])
 dlg = uic.loadUi("Affine_Cipher.ui")
